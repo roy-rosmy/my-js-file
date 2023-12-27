@@ -1,0 +1,153 @@
+/* styles.css */
+
+/* Global Styles */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #f1f1f1;}
+
+.header-left h1 {
+  margin: 0;
+}
+
+.header-right img {
+  height: 50px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* styles.css */
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.label {
+  flex-basis: 30%;
+  margin-right: 10px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.input-field {
+  flex-basis: 70%;
+}
+
+.input-field input,
+.input-field select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+/* Custom Styles for the User Interface */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #888 transparent transparent transparent;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Tab Styles */
+.tab-wrapper {
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+}
+
+.tab {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: #fff;
+  margin: 10px 10px 0px 10px;
+}
+
+
+.btn-save,
+.btn-cancel {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-save {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.btn-cancel {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btn-save:hover,
+.btn-cancel:hover {
+  opacity: 0.8;
+}

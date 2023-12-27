@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management System</title>
+  <link rel="stylesheet" href="style.css">
+ 
+
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>Add Colleague</h1>
+    </div>
+    <div class="header-right">
+      <img src="" alt="Logo">
+    </div>
+  </header>
+ 
+  <main>
+    <div class="tab-wrapper">
+      <div class="tab active" data-tab="personal">Personal</div>
+      <!-- Add more tabs here if needed -->
+    </div>
+    <section id="personal" class="tab-content active">
+      <!-- <form id="registrationForm" action="http://localhost/store_user.php" method="POST"> -->
+        <form id="registrationForm">
+        <div class="form-group">
+          <label class="label" for="title">Title:</label>
+          <div class="input-field">
+            <select id="title" name="title" required>
+              <option value="">Select</option>
+              <option value="Mr">Mr.</option>
+              <option value="Mrs">Mrs.</option>
+              <option value="Ms">Ms.</option>
+              <option value="Miss">Miss</option>
+              <option value="Dr">Dr.</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="label" for="firstname">First Name:</label>
+          <input class="input-field" type="text" id="firstname" name="firstname" required>
+        </div>
+        <div class="form-group">
+          <label class="label" for="surname">Surname:</label>
+          <input class="input-field" type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+          <label class="label" for="informalname">Informal Name:</label>
+          <input class="input-field" type="text" id="informalname" name="informalname">
+        </div>
+        <div class="form-group">
+          <label class="label" for="address">Address:</label>
+          <textarea class="input-field" id="address" name="address" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="label" for="town">Town:</label>
+          <input class="input-field" type="text" id="town" name="town">
+        </div>
+        <div class="form-group">
+          <label class="label" for="postcode">Postcode:</label>
+          <input class="input-field" type="text" id="postcode" name="postcode" required>
+        </div>
+        <div class="form-group">
+          <label class="label" for="ninumber">NI Number:</label>
+          <input class="input-field" type="text" id="ninumber" name="ninumber">
+        </div>
+        <div class="form-group">
+          <label class="label" for="dob">Date of Birth:</label>
+          <input class="input-field" type="date" id="dob" name="dob">
+        </div>
+        <div class="form-group">
+          <label class="label" for="mobiletel">Mobile Tel:</label>
+          <input class="input-field" type="tel" id="mobiletel" name="mobiletel">
+        </div>
+        <div class="form-group">
+          <label class="label" for="hometel">Home Tel:</label>
+          <input class="input-field" type="tel" id="hometel" name="hometel">
+        </div>
+        <div class="form-group">
+          <label class="label" for="othertel">Other Tel:</label>
+          <input class="input-field" type="tel" id="othertel" name="othertel">
+        </div>
+        <div class="form-group">
+          <label class="label" for="personalemail">Personal Email:</label>
+          <input class="input-field" type="email" id="personalemail" name="personalemail">
+        </div>
+        <div class="form-group">
+          <label class="label" for="gender">Gender:</label>
+          <div class="input-field" class="select-wrapper">
+            <select id="gender" name="gender" required>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label" for="initials">Initials:</label>
+          <input class="input-field" type="text" id="initials" name="initials">
+        </div>
+        <div class="form-group">
+          <label class="label" for="emergencyname">Emergency Contact Name:</label>
+          <input class="input-field" type="text" id="emergencyname" name="emergencyname">
+        </div>
+        <div class="form-actions">
+          <input type="submit"  id="saveButton" value="Save" class="btn-save"/>
+          <button type="button" id="clearFormButton" class="btn-cancel" onclick="clearForm()">Cancel</button>
+        
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 User Management System. All rights reserved.</p>
+  </footer>
+  <script src="ViewUser.js">
+  </script>
+</body>
+</html>
